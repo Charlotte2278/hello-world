@@ -4,6 +4,7 @@
 public class GitDemo {
     
     private double previousNumber;
+    private double reverseNumber;
     
     public GitDemo() {
         previousNumber = 1;
@@ -14,17 +15,12 @@ public class GitDemo {
     *****/
     
     public double addNumber(double num) {
-        
-    addNumber = previousNumber + num;
         System.out.print("Add num to previousNumber");
-        return 0;
+        previousNumber = previousNumber + num;
+       return previousNumber;
     }
     
-   private double reverseNumber(double num)
-   {
-       reverseNum = double newNumber;
-       
-   }
+
     
     /*****
      * This function should calculate the factorial of 'num' and return the resulting value.
@@ -48,14 +44,19 @@ public class GitDemo {
      * i.e. if num = 1234
      *  the function will return 4321
      *****/
-    public double reverseNumber(int num){
+    public double reverseNumber(int num)
+    {
         double newNumber = 1;
         
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
+       reverseNum = newNumber;
+       return newNumber;
         
-        return newNumber;
+        
+        
+      
     }
     
 }
